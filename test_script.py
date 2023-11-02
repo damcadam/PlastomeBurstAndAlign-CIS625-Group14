@@ -1,6 +1,7 @@
 import subprocess
 import os
 import shutil
+import time # for rough program timing
 
 # Get the current directory of the test script
 script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -28,7 +29,13 @@ subprocess.run(["mkdir", "-p", f"{folder_CDS}/02_aligned/fasta"])
 subprocess.run(["mkdir", "-p", f"{folder_CDS}/02_aligned/nexus"])
 
 # Step 4: Run your Python script using the full_script_path
+print("\n------------- starting to run PlastomeBurstAndAlign ------------\n")
+start_time = time.time()
+
 subprocess.run(["python", full_script_path, "-i", ".", "-o", folder_CDS, "-s", "cds"])
+
+end_time = time.time()
+total_time = end_time - start_time
 
 # run this to remove the folder, if not can comment out
 # Step 5: Delete the benchmarking1 directory and its contents
@@ -36,4 +43,7 @@ subprocess.run(["python", full_script_path, "-i", ".", "-o", folder_CDS, "-s", "
 shutil.rmtree("benchmarking1")
 
 print("benchmarking1 directory and its contents have been deleted.")
+
+# Print time to just run PlastomeBurstAndAlign
+print(f"\n --- Time to run PlastomeBurstAndAlign = {total_time:.4f} seconds --- \n")
 
