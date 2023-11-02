@@ -9,7 +9,6 @@
 # 	3. Run this script with the following (without the quotes) '. SetupModulesAndPython.sh'
 
 # Add the MAFFT bin folder to the PATH if it's not already there
-#MAFFT_BIN_FOLDER=/homes/dariusm/GenomicsTool/GenomicsBin
 MAFFT_BIN_FOLDER=/homes/dariusm/GenomicsBin
 if [[ ":$PATH:" != *":$MAFFT_BIN_FOLDER:"* ]]; then
     export PATH="$PATH:$MAFFT_BIN_FOLDER"
