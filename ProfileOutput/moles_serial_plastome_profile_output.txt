@@ -1,0 +1,28 @@
+ 276986457 function calls (263831021 primitive calls) in 228.679 seconds
+
+   Ordered by: cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)        
+        1    0.000    0.000  228.681  228.681 PlastomeRegionBurstAndAlign.py:2(<module>)
+        1    0.003    0.003  211.731  211.731 PlastomeRegionBurstAndAlign.py:498(main)
+        1    0.000    0.000   91.579   91.579 PlastomeRegionBurstAndAlign.py:431(conduct_protein_alignment_and_back_translation)
+        1    0.018    0.018   91.558   91.558 PlastomeRegionBurstAndAlign.py:189(proteinalign_and_backtranslate)
+        1    0.021    0.021   61.838   61.838 PlastomeRegionBurstAndAlign.py:440(convert_fasta_alignment_to_nexus)
+       85    0.007    0.000   47.426    0.558 PlastomeRegionBurstAndAlign.py:236(mafft_align)
+        1    0.064    0.064   36.581   36.581 PlastomeRegionBurstAndAlign.py:308(extract_and_collect_annotations)
+      155    0.215    0.001   28.698    0.185 PlastomeRegionBurstAndAlign.py:32(do_CDS)
+        1    0.017    0.017   21.103   21.103 PlastomeRegionBurstAndAlign.py:476(concatenate_alignments)
+        1    0.001    0.001    0.427    0.427 PlastomeRegionBurstAndAlign.py:393(extract_and_combine_nucleotide_sequences)
+        1    0.000    0.000    0.141    0.141 PlastomeRegionBurstAndAlign.py:345(removing_duplicate_annotations)
+        4    0.129    0.032    0.133    0.033 PlastomeRegionBurstAndAlign.py:265(remove_duplicates)
+        1    0.000    0.000    0.013    0.013 PlastomeRegionBurstAndAlign.py:356(remove_annotations_below_taxa_cutoff)
+        1    0.000    0.000    0.006    0.006 PlastomeRegionBurstAndAlign.py:366(remove_orfs)
+        1    0.001    0.001    0.006    0.006 PlastomeRegionBurstAndAlign.py:376(remove_user_defined_genes)
+        1    0.000    0.000    0.003    0.003 PlastomeRegionBurstAndAlign.py:281(setup_logger)
+        1    0.000    0.000    0.000    0.000 PlastomeRegionBurstAndAlign.py:316(<listcomp>)
+      155    0.000    0.000    0.000    0.000 PlastomeRegionBurstAndAlign.py:29(__init__)
+        1    0.000    0.000    0.000    0.000 PlastomeRegionBurstAndAlign.py:289(unpack_input_parameters)
+        1    0.000    0.000    0.000    0.000 PlastomeRegionBurstAndAlign.py:370(<listcomp>)
+        1    0.000    0.000    0.000    0.000 PlastomeRegionBurstAndAlign.py:27(ExtractAndCollect)
+------------- starting to run PlastomeBurstAndAlign ------------
+ --- Time to run PlastomeBurstAndAlign = 229.1733 seconds --- 
