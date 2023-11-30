@@ -19,7 +19,7 @@ import subprocess
 # ------------------------------------------------------------------------------#
 ## DEBUGGING HELP
 import ipdb
-# ipdb.set_trace()
+ipdb.set_trace()
 
 # -----------------------------------------------------------------#
 # CLASSES AND FUNCTIONS
